@@ -16,8 +16,8 @@ function Shop() {
     })
       .then((response) => response.json())
       .then((data) => {
-        console.log(data.featured);
-        data.featured && setGoods(data.featured);
+        console.log(data.shop);
+        data.shop && setGoods(data.shop);
         setLoading(false);
       });
   }, []);
