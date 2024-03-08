@@ -1,13 +1,20 @@
 function GoodsItem(props) {
-  // const { id, name, description, price, full_background } = props;
   const {
-    mainId: id,
-    displayName: name,
-    displayDescription: description,
-    price: { regularPrice: price },
-    displayAssets: [{ full_background }],
+    id,
+    name,
+    description,
+    price,
+    full_background,
     addToBasket = Function.prototype,
   } = props;
+  // const {
+  //   mainId: id,
+  //   displayName: name,
+  //   displayDescription: description,
+  //   price: { regularPrice: price },
+  //   displayAssets: [{ full_background }],
+  //   addToBasket = Function.prototype,
+  // } = props;
 
   return (
     <div className="card">
